@@ -36,7 +36,7 @@
                 <configuration>
                     <instrumentation>
                         <includes>
-                            <include>sukutaulugeneraattori.logiikka/*.class</include>
+                            <include>sukutaulugeneraattori.sovelluslogiikka/*.class</include>
                             <include>sukutaulugeneraattori.kayttoliittyma/*.class</include>
                         </includes>
                     </instrumentation>
@@ -49,11 +49,11 @@
                 <version>0.30</version>
                 <configuration>
                     <targetClasses>
-                        <param>sukutaulugeneraattori.logiikka.*</param>
+                        <param>sukutaulugeneraattori.sovelluslogiikka.*</param>
                         <param>sukutaulugeneraattori.kayttoliittyma.*</param>
                     </targetClasses>
                     <targetTests>
-                        <param>sukutaulugeneraattori.logiikka.*</param>
+                        <param>sukutaulugeneraattori.sovelluslogiikka.*</param>
                         <param>sukutaulugeneraattori.kayttoliittyma.*</param>
                     </targetTests>
                 </configuration>
