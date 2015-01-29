@@ -13,8 +13,8 @@ public class RotuGeneraattori {
     
     
     
-    public static String hevosenRotu(String rotulyhenne) {
-        return rotulyhenne;
+    public static String hevosenRotu() {
+        return "naru";
     }
     
 }
