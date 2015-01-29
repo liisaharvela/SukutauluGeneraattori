@@ -14,44 +14,16 @@ import java.util.Random;
 public class VariGeneraattori {
 
     public static String vainPerusvarit() {
-        String[] varit = {"rt", "rn", "m", "km", "mkm", "tprt", "tprn", "trt",
-            "trn", "rnkm", "mkm", "rtkm", "sysrt", "mksrt", "klm", "kkm", "klm"};
-
-        String vari = varit[(int) (Math.random() * varit.length)];
-
-        return vari;
+        return "naru";
+    }
+    
+    public static String salliErikoisvarit() {
+        return "naru";
     }
 
-    public static String salliErikoisVarit() {
-        String[] varit = {"hkko", "hrkko", "hpm", "hprn", "khkko", "mpäist",
-            "mvkk", "phkko", "päist", "rtpäist", "rnhkko", "rnpäist", "ssvkk",
-            "vhkk", "vkk", "vvkk", "rt", "rn", "m", "km", "mkm", "tprt", "tprn", "trt",
-            "trn", "rnvkk", "rnkm", "mkm", "rtkm", "sysrt", "mksrt", "klm", "kkm", "klm"};
-
-        String vari = varit[(int) (Math.random() * varit.length)];
-
-        return vari;
+    public static int randomNumberGenerator(int max, int min) {
+        Random rand = new Random();
+        int randomNum = rand.nextInt((max - min) + 1) + min;
+        return randomNum;
     }
-
-    public static String salliKirjavat() {
-        String[] varit = {"fr", "krj", "mkrj", "rtkrj", "rnkrj", "sb",
-            "spl", "tkrj", "to", "rt", "rn", "m", "km", "mkm", "tprt", "tprn", "trt",
-            "trn", "rnvkk", "rnkm", "mkm", "rtkm", "sysrt", "mksrt", "klm", "kkm", "klm"};
-
-        String vari = varit[(int) (Math.random() * varit.length)];
-
-        return vari;
-    }
-
-    public static String salliKaikkiVarit() {
-        String[] varit = {"fr", "hkko", "hrkko", "hpm", "hprn", "khkko", "krj", "mkrj", "mpäist",
-            "mvkk", "phkko", "päist", "rtkrj", "rtpäist", "rnhkko", "rnpäist", "rnkrj", "sb", "ssvkk",
-            "spl", "tkrj", "to", "vhkk", "vkk", "vvkk", "rt", "rn", "m", "km", "mkm", "tprt", "tprn", "trt",
-            "trn", "rnvkk", "rnkm", "mkm", "rtkm", "sysrt", "mksrt", "klm", "kkm", "klm"};
-
-        String vari = varit[(int) (Math.random() * varit.length)];
-
-        return vari;
-    }
-
 }

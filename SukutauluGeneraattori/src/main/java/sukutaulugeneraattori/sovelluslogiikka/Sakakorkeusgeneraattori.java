@@ -18,5 +18,4 @@ public class Sakakorkeusgeneraattori {
         return randomNum;
     }
     
-    
 }

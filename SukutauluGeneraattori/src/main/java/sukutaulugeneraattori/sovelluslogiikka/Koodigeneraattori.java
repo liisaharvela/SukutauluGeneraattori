@@ -10,9 +10,5 @@ package sukutaulugeneraattori.sovelluslogiikka;
  * @author Liisa
  */
 public class Koodigeneraattori {
-
-    public Koodigeneraattori(int montakoPolvea) {
-        
-    }
-
+    
 }
