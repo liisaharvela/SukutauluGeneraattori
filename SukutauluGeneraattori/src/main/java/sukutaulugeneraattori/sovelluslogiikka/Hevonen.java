@@ -5,33 +5,50 @@
  */
 package sukutaulugeneraattori.sovelluslogiikka;
 
-import static sukutaulugeneraattori.sovelluslogiikka.Sakakorkeusgeneraattori.generoiSakakorkeus;
+import java.util.Random;
 
 /**
  *
  * @author Liisa
  */
 public class Hevonen {
-    
+
     private int sakakorkeus;
-    
-    public Hevonen () {
-        this.sakakorkeus = 0;
+    private String vari;
+    private String nimi;
+    private String skp;
+    private String rotu;
+
+    public Hevonen(int min, int max, boolean erikoisvarit, boolean tamma, boolean suomi, String rotu) {
+        this.rotu = rotu;
+        this.sakakorkeus = Sakakorkeusgeneraattori.generoiSakakorkeus(min, max);
+
+        if (erikoisvarit) {
+            this.vari = VariGeneraattori.salliKaikkiVarit();
+        } else {
+            this.vari = VariGeneraattori.vainPerusvarit();
+        }
+
+        if (tamma) {
+            this.skp = "tamma";
+        } else {
+            this.skp = "ori";
+        }
+
+        if (suomi && tamma) {
+            this.nimi = Nimigeneraattori.suomalainenTamma();
+        } else if (suomi && tamma != true) {
+            this.nimi = Nimigeneraattori.suomalainenOri();
+        } else if (suomi != true && tamma) {
+            this.nimi = Nimigeneraattori.englantilainenTamma();
+        } else if (suomi != true && tamma != true) {
+            this.nimi = Nimigeneraattori.englantilainenOri();
+        }
     }
-    
-    public void nimeaHevonen () {
-        
+
+    @Override
+    public String toString() {
+        return this.nimi + "\n" + this.rotu + "-" + this.skp + ", " + this.vari + " " + this.sakakorkeus;
     }
-    
-    public void teeHepastaIso (int min, int max) {
-        this.sakakorkeus = generoiSakakorkeus(min, max);
-    }
-    
-    public void varjaaHevonen () {
-       
-    }
-    
-    public void annaRotuHevoselle () {
-        
-    }
+
 }
