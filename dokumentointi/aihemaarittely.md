@@ -1,13 +1,9 @@
 Aihe: Sukutaulugeneraattori fantasiaeläimille
 
-Toteutan generaattorin, joka generoi sukutaulun käyttäjän spesifikaatioiden mukaan mielikuvituseläimelle. Tämä on tarkoitettu käytettäväksi esimerkiksi nuoren heppatyttöserkkuni hevosleikeissä. Generaattoriin tulee käyttäjälle mahdollisuuksia määritellä, minkärotuisen eläimen sukutaulun haluaa, ja minkäkokoisia ja -värisiä sukulaisia sukutauluun voi olla. Sukutaulugeneraattorissa voi myös valita, montako polvea sukutaulua haluaa generoida.
+Toteutan generaattorin, joka generoi mielikuvituseläimen käyttäjälle. Generaattori generoi randomilla nimen, lajin, sukupuolen, värin, kaksipolvisen sukutaulun ja säkäkorkeuden fantasiaeläimelle, ja antaa sen käyttäjälle napinpainalluksesta. 
 
-Käyttäjät: Leikkijä
+Käyttäjä: Leikki-ikäinen lapsi
 
-Käyttäjän toiminnot:
-- Valitsee generoitavien polvien määrän
-- Valitsee generoitavan eläimen sukutaulun rodun
-- Valitsee sukutaulussa olevien eläinten säkäkorkeushaarukan
-- Valitsee sukutaulussa olevien eläinten värit
-- Voi generoida yksinkertaisen HTML-kooditaulukon sukutaulusta
-- Käyttäjä voi myös valita, että täyttää itse sukutaulun tiedot, jolloin generaattori vain generoi HTML-koodin
+Toimintoja:
+- Generoi eläin (käyttöliittymän kautta)
+- Ylläpitoluokka, jolla voi lisätä värejä/rotuja/ymsyms generoitavien listoille.

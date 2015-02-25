@@ -1,6 +1,6 @@
 
-import elaingeneraattori.kayttoliittyma.FantasiaelainGeneraattori;
-import elaingeneraattori.sovelluslogiikka.Elain;
+import SukutauluGeneraattori.kayttoliittyma.FantasiaelainGeneraattori;
+import SukutauluGeneraattori.sovelluslogiikka.Elain;
 import javax.swing.SwingUtilities;
 
 /*
