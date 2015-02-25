@@ -31,17 +31,9 @@
                 <version>2.5</version>
             </plugin>
             <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>cobertura-maven-plugin</artifactId>
-                <configuration>
-                    <instrumentation>
-                        <includes>
-                            <include>elaingeneraattori.sovelluslogiikka/*.class</include>
-                            <include>elaingeneraattori.kayttoliittyma/*.class</include>
-                        </includes>
-                    </instrumentation>
-                </configuration>
-                <version>2.6</version>
+                <groupId>org.codehaus.mojo</groupId> 
+                <artifactId>cobertura-maven-plugin</artifactId> 
+                <version>2.6</version> 
             </plugin>
             <plugin>
                 <groupId>org.pitest</groupId>
@@ -50,11 +42,9 @@
                 <configuration>
                     <targetClasses>
                         <param>elaingeneraattori.sovelluslogiikka.*</param>
-                        <param>elaingeneraattori.kayttoliittyma.*</param>
                     </targetClasses>
                     <targetTests>
                         <param>elaingeneraattori.sovelluslogiikka.*</param>
-                        <param>elaingeneraattori.kayttoliittyma.*</param>
                     </targetTests>
                 </configuration>
             </plugin>

@@ -15,7 +15,9 @@ public class Nimigeneraattori {
 
     public static String englantilainenNimi() {
         String[] names1 = {"George", "Benjamin", "Joseph"}; // lisää nimiä myöhemmin
-        String[] names2 = {"", "Fabulous", "Egregious"};
+        String[] names2 = {"", "Fabulous", "Egregious", "Argle", "Bargle", "Argyle", "Callipygian", "Canoodle", "Cantankerous", 
+            "Cockalorum", "Collop", "Codswallop", "Comeuppance", "Crudivore", "Cockamamie", "Fard", "Fartlek", "Fatuous", 
+            "Filibuster"};
         String[] names3 = {"", "Bungalow", ""};
         
         String name1 = names1[(int) (Math.random() * names1.length)];
