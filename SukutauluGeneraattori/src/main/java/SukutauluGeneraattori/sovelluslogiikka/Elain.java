@@ -29,13 +29,19 @@ public class Elain {
         this.vari = VariGeneraattori.valitseVari();
         this.skp = Sukupuoligeneraattori.valitseSkp(); 
         this.nimi = Nimigeneraattori.englantilainenNimi();
-        this.isannimi = Nimigeneraattori.englantilainenOri();
-        this.isanisannimi = Nimigeneraattori.englantilainenOri();
-        this.isanemannimi = Nimigeneraattori.englantilainenTamma();
-        this.emannimi = Nimigeneraattori.englantilainenTamma();
-        this.emanisannimi = Nimigeneraattori.englantilainenOri();
-        this.emanemannimi = Nimigeneraattori.englantilainenTamma();
+        this.isannimi = Nimigeneraattori.englantilainenUros();
+        this.isanisannimi = Nimigeneraattori.englantilainenUros();
+        this.isanemannimi = Nimigeneraattori.englantilainenNaaras();
+        this.emannimi = Nimigeneraattori.englantilainenNaaras();
+        this.emanisannimi = Nimigeneraattori.englantilainenUros();
+        this.emanemannimi = Nimigeneraattori.englantilainenNaaras();
     }
+    
+ //   public String setLaji () {
+ //       Lajigeneraattori lajunen = new Lajigeneraattori();
+ //       laji = lajunen.getLaji();
+ //       return laji;
+ //   }
     
     public String getNimi() {
         return this.nimi;

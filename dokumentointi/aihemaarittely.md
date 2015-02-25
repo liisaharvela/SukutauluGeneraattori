@@ -6,4 +6,4 @@ Käyttäjä: Leikki-ikäinen lapsi
 
 Toimintoja:
 - Generoi eläin (käyttöliittymän kautta)
-- Ylläpitoluokka, jolla voi lisätä värejä/rotuja/ymsyms generoitavien listoille.
+- Tulostin (tulosta eläimen sukutaulu ja tiedot valmiiksi muotoiltuna (X)HTML-kielellä taulukkoon)
