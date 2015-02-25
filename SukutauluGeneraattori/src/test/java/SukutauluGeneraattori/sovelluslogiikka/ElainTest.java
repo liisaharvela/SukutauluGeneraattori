@@ -5,13 +5,10 @@ package SukutauluGeneraattori.sovelluslogiikka;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author Liisa
  */
-import SukutauluGeneraattori.sovelluslogiikka.Elain;
-import SukutauluGeneraattori.sovelluslogiikka.Elain;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -22,6 +19,10 @@ import static org.hamcrest.CoreMatchers.*;
 import static org.junit.matchers.JUnitMatchers.containsString;
 import static org.junit.matchers.JUnitMatchers.either;
 
+/**
+ *
+ * @author Liisa
+ */
 public class ElainTest {
 
     public ElainTest() {
@@ -47,10 +48,10 @@ public class ElainTest {
     public void generaattoriTekeeErilaisiaElaimia() {
         Elain elainYksi = new Elain();
         Elain elainKaksi = new Elain();
-        
+
         String eka = elainYksi.toString();
         String toka = elainKaksi.toString();
-        
+
         assertThat(eka, not(toka));
     }
 
@@ -62,7 +63,7 @@ public class ElainTest {
         String nimiKaksi = elainKaksi.getNimi();
         assertThat(nimiYksi, not(nimiKaksi));
     }
-    
+
     @Test
     public void generaattorinElaimillaOnEriSakakorkeudet() {
         Elain elainYksi = new Elain();
@@ -71,15 +72,88 @@ public class ElainTest {
         int sakaKaksi = elainKaksi.getSakakorkeus();
         assertThat(sakaYksi, not(sakaKaksi));
     }
-    
+
     @Test
     public void generaattorinElaimetSaavatSukupuolen() {
         Elain elainYksi = new Elain();
         String skpYksi = elainYksi.getSkp();
-        
+
         assertThat(skpYksi, either(containsString("uros")).or(containsString("naaras")));
+    }
+
+    @Test
+    public void HTMLGeneraattoriTulostaaSukupuolen() {
+        Elain elainYksi = new Elain();
+        String htmlYksi = elainYksi.forHTML();
+
+        assertThat(htmlYksi, either(containsString("uros")).or(containsString("naaras")));
+    }
+
+    @Test
+    public void HTMLGeneraattoriTulostaaNimenOikein() {
+        Elain elainYksi = new Elain();
+
+        String elukkaYksi = elainYksi.forHTML();
+
+        assertThat(elukkaYksi, containsString(elainYksi.getNimi()));
+    }
+
+    @Test
+    public void HTMLGeneraattoriTulostaaSukupuolenOikein() {
+        Elain elainYksi = new Elain();
+
+        String elukkaYksi = elainYksi.forHTML();
+
+        assertThat(elukkaYksi, containsString(elainYksi.getSkp()));
+    }
+
+    @Test
+    public void HTMLGeneraattoriTulostaaVarinOikein() {
+        Elain elainYksi = new Elain();
+
+        String elukkaYksi = elainYksi.forHTML();
+
+        assertThat(elukkaYksi, containsString(elainYksi.getVari()));
+    }
+
+
+    @Test
+    public void HTMLGeneraattoriTulostaaLajinOikein() {
+        Elain elainYksi = new Elain();
+
+        String elukkaYksi = elainYksi.forHTML();
+
+        assertThat(elukkaYksi, containsString(elainYksi.getLaji()));
     }
     
     
+    @Test
+    public void ElainSaaVarin() {
+        Elain elainYksi = new Elain();
+
+        String elukkaYksi = elainYksi.toString();
+
+        assertThat(elukkaYksi, containsString(elainYksi.getVari()));
+    }
     
+    @Test
+    public void ElainSaaIsan() {
+        Elain elainYksi = new Elain();
+
+        String elukkaYksi = elainYksi.toString();
+
+        assertThat(elukkaYksi, containsString(elainYksi.getIsanNimi()));
+    }
+    
+    @Test
+    public void ElainSaaEman() {
+        Elain elainYksi = new Elain();
+
+        String elukkaYksi = elainYksi.toString();
+
+        assertThat(elukkaYksi, containsString(elainYksi.getEmanNimi()));
+    }
+    
+
+
 }
