@@ -7,4 +7,6 @@ TUNTIKIRJANPITO
 29.01.2015: 2h, Hevonen-oliomuuttujan lisääminen sovelluslogiikkaideaan. Rotugeneraattorin toimintaperiaatteen uudelleenharkitsemista, saatan luopua rotulistasta ja tehdä rotugeneroimisesta vain käyttäjän suorasyötteen joka sitten kopioituu jokaiselle generoidulle hevoselle. Keskittyminen testiluokkiin tänään.
 29.01.2015: 1h. GitHub näemmä jotenkin poisti kaikki muutokset mitä olin tehnyt? Yritin revertin avulla palauttaa kaikkea edellisen pushin jälkeen tapahtunutta työtä, mutta en tiedä sainko kaiken takaisin. Itkettää. Nyt en tee enää.
 
-20.02.2015: Sovelluslogiikka toimii. Kaikki testit ja itse käyttöliittymä ensi viikolla. Perheessä tapahtuneen sairastapauksen johdosta jäi nyt viimiset 2vk ihan miltei nollille työskentely. 
+20.02.2015: 4h. Sovelluslogiikka toimii. Kaikki testit ja itse käyttöliittymä ensi viikolla. Perheessä tapahtuneen sairastapauksen johdosta jäi nyt viimiset 2vk ihan miltei nollille työskentely. 
+22.02.2015: 2h. Sovelluslogiikan muokkailua. Kuntoon ja odottamaan käyttöliittymää.
+25.02.2015: 6h. Käyttöliittymän koodaus. Toimii!

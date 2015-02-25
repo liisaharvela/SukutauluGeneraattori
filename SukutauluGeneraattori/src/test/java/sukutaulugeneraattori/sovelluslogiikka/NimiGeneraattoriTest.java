@@ -12,7 +12,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import sukutaulugeneraattori.sovelluslogiikka.Nimigeneraattori;
+import elaingeneraattori.sovelluslogiikka.Nimigeneraattori;
 
 /**
  *
@@ -39,18 +39,7 @@ public class NimiGeneraattoriTest {
     public void tearDown() {
     }
 
-    @Test
-    public void nimigeneraattoriGeneroiSuomalaisenOrinNimen() {
-        String nimi = Nimigeneraattori.suomalainenOri();
-        assertEquals(nimi.length(), nimi.length() != 0);
-    }
 
-    @Test
-    public void nimigeneraattoriGeneroiSuomalaisenTammanNimen() {
-        String nimi = Nimigeneraattori.suomalainenTamma();
-        int testi = nimi.length(); 
-        assertEquals(nimi.length(), nimi.length() != 0);
-    }
 
     @Test
     public void nimigeneraattoriGeneroiEnglanninkielisenOrinNimen() {

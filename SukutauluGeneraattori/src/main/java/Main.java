@@ -1,5 +1,7 @@
 
-import sukutaulugeneraattori.sovelluslogiikka.*;
+import elaingeneraattori.kayttoliittyma.FantasiaelainGeneraattori;
+import elaingeneraattori.sovelluslogiikka.Elain;
+import javax.swing.SwingUtilities;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -13,20 +15,8 @@ import sukutaulugeneraattori.sovelluslogiikka.*;
 public class Main {
 
     public static void main(String[] args) {
-        String oriNimi = Nimigeneraattori.suomalainenOri();
-        System.out.println(oriNimi);
-
-        String tammaNimi = Nimigeneraattori.suomalainenTamma();
-        System.out.println(tammaNimi);
-
-
-        String tammaVari = VariGeneraattori.salliKaikkiVarit();
-        System.out.println(tammaVari);
-
-
-        String varsa2Vari = VariGeneraattori.vainPerusvarit();
-        System.out.println(varsa2Vari);
-
+        
+        SwingUtilities.invokeLater(new FantasiaelainGeneraattori());
     }
 
 }
