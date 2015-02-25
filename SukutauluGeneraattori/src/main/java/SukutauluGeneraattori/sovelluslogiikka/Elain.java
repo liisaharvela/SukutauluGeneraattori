@@ -27,7 +27,7 @@ public class Elain {
         this.laji = Lajigeneraattori.generoiLaji();
         this.sakakorkeus = Sakakorkeusgeneraattori.generoiSakakorkeus(180, 100);
         this.vari = VariGeneraattori.valitseVari();
-        this.skp = Sukupuoligeneraattori.valitseSkp(); 
+        this.skp = Sukupuoligeneraattori.valitseSkp();
         this.nimi = Nimigeneraattori.englantilainenNimi();
         this.isannimi = Nimigeneraattori.englantilainenUros();
         this.isanisannimi = Nimigeneraattori.englantilainenUros();
@@ -36,41 +36,63 @@ public class Elain {
         this.emanisannimi = Nimigeneraattori.englantilainenUros();
         this.emanemannimi = Nimigeneraattori.englantilainenNaaras();
     }
-    
- //   public String setLaji () {
- //       Lajigeneraattori lajunen = new Lajigeneraattori();
- //       laji = lajunen.getLaji();
- //       return laji;
- //   }
-    
+
     public String getNimi() {
         return this.nimi;
     }
-    
+
     public String getSkp() {
         return this.skp;
     }
-    
+
     public String getVari() {
         return this.vari;
     }
-    
+
     public String getLaji() {
         return this.laji;
     }
-    
+
     public int getSakakorkeus() {
         return this.sakakorkeus;
     }
+
+    public String getIsanNimi() {
+        return this.isannimi;
+    }
+
+    public String getEmanNimi() {
+        return this.emannimi;
+    }
+
+    public String getIsanIsanNimi() {
+        return this.isanisannimi;
+    }
+
+    public String getIsanEmanNimi() {
+        return this.isanemannimi;
+    }
+
+    public String getEmanIsanNimi() {
+        return this.emanisannimi;
+    }
     
+    public String getEmanEmanNimi() {
+        return this.emanemannimi;
+    }
+
     public String getIsa() {
         return this.isannimi + " " + "(" + this.isanisannimi + " x " + this.isanemannimi + ")";
     }
-    
+
     public String getEma() {
         return this.emannimi + " " + "(" + this.emanisannimi + " x " + this.emanemannimi + ")";
     }
-
+    
+    public String forHTML() {
+        return this.nimi + "<br />" + this.laji + "-" + this.skp + ", " + this.vari + " " + this.sakakorkeus + "cm";
+    }
+    
     @Override
     public String toString() {
         return this.nimi + this.laji + this.skp + this.vari + this.sakakorkeus + this.isannimi + this.emannimi;

@@ -12,7 +12,8 @@ package SukutauluGeneraattori.sovelluslogiikka;
 public class Sukupuoligeneraattori {
 
     public static String valitseSkp() {
-        String[] sukupuolet = {"naaras", "uros"};
+        String[] sukupuolet = {"naaras", "uros", "naaras", "uros", "naaras", "uros", "naaras", "uros", "naaras", "uros", 
+        "naaras", "uros", "naaras", "uros", "naaras", "uros", "naaras", "uros", "naaras", "uros", "naaras", "uros"};
 
         String skp = sukupuolet[(int) (Math.random() * sukupuolet.length)];
 

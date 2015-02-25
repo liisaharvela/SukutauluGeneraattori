@@ -12,10 +12,10 @@ package SukutauluGeneraattori.kayttoliittyma;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.GridLayout;
-import static javax.management.Query.plus;
 import javax.swing.JFrame;
 import javax.swing.JButton;
 import javax.swing.JPanel;
+import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.WindowConstants;
 
@@ -26,8 +26,8 @@ public class FantasiaelainGeneraattori implements Runnable {
 
     @Override
     public void run() {
-        frame = new JFrame("Generoi eläin");
-        frame.setPreferredSize(new Dimension(1000, 300));
+        frame = new JFrame("Fantasiaeläingeneraattori");
+        frame.setPreferredSize(new Dimension(1000, 800));
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         luoKomponentit(frame.getContentPane());
@@ -37,7 +37,25 @@ public class FantasiaelainGeneraattori implements Runnable {
     }
 
     private void luoKomponentit(Container container) {
-        container.setLayout(new GridLayout(4, 1));
+        container.setLayout(new GridLayout(10, 1));
+        
+        JTextField selitys = new JTextField("Tervetuloa fantasiaeläingeneraattoriin. Voit joko generoida eläimen taulukkomuodossa generaattorissa tai suoraan esitäytettyyn HTML-sukutauluun.");
+        selitys.setEditable(false);
+        selitys.setHorizontalAlignment(JTextField.CENTER);
+        container.add(selitys);
+        
+        JTextArea tyhjaKaksi = new JTextArea();
+        tyhjaKaksi.setEditable(false);
+        container.add(tyhjaKaksi);
+        
+        JButton nimiteksti = new JButton("Nimi:");
+        nimiteksti.setEnabled(false);
+        
+        JButton ptteksti = new JButton("Perustiedot:");
+        ptteksti.setEnabled(false);
+        
+        JButton sukuteksti = new JButton("Sukutiedot:");
+        sukuteksti.setEnabled(false);
         
         JTextField nimi = new JTextField("Eläimen nimi");
         nimi.setHorizontalAlignment(JTextField.CENTER);
@@ -57,28 +75,50 @@ public class FantasiaelainGeneraattori implements Runnable {
         JTextField ema = new JTextField("Emä");
         ema.setHorizontalAlignment(JTextField.CENTER);
         
-        container.add(nimi);
+        JPanel neljasPaneli = new JPanel(new GridLayout(2, 1));
+        neljasPaneli.add(nimiteksti);
+        neljasPaneli.add(nimi);
+        container.add(neljasPaneli);
         
-        JPanel kolmasPaneli = new JPanel(new GridLayout(1, 3));
+        
+        
+        JPanel kolmasPaneli = new JPanel(new GridLayout(1, 4));
+        container.add(ptteksti);
         kolmasPaneli.add(laji);
         kolmasPaneli.add(vari);
         kolmasPaneli.add(skp);
         container.add(kolmasPaneli);
         
         JPanel toinenPaneli = new JPanel(new GridLayout(1, 2));
+        container.add(sukuteksti);
         toinenPaneli.add(isa);
         toinenPaneli.add(ema);
         container.add(toinenPaneli);
-
-        JButton generoi = new JButton("Generoi");
+        
+        JButton generoi = new JButton("Generoi eläimen tiedot taulukkoon");
         JPanel paneli = new JPanel(new GridLayout(1, 1));
         paneli.add(generoi);
         container.add(paneli);
+        
+        JTextArea tyhja = new JTextArea();
+        tyhja.setEditable(false);
+        container.add(tyhja);
+        
+        JTextField koodiKentta = new JTextField("Koodi");
+        nimi.setHorizontalAlignment(JTextField.CENTER);
+        JButton generoiKoodi = new JButton("Generoi esitäytetty sukutaulu HTML-koodina");
+        JPanel paneliKoodi = new JPanel(new GridLayout(2,1));
+        paneliKoodi.add(koodiKentta);
+        paneliKoodi.add(generoiKoodi);
+        container.add(paneliKoodi);
         
 
 
         Tapahtumakuuntelija kasittelija = new Tapahtumakuuntelija(generoi, nimi, skp, vari, laji, isa, ema);
         generoi.addActionListener(kasittelija);
+        
+        HTMLKuuntelija kuuntelija = new HTMLKuuntelija(generoiKoodi, koodiKentta);
+        generoiKoodi.addActionListener(kuuntelija);
     }
 
     public JFrame getFrame() {
