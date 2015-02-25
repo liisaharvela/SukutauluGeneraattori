@@ -1,5 +1,3 @@
-package sukutaulugeneraattori.sovelluslogiikka;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -12,45 +10,35 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import elaingeneraattori.sovelluslogiikka.Nimigeneraattori;
 
 /**
  *
  * @author Liisa
  */
-public class NimiGeneraattoriTest {
-
-    public NimiGeneraattoriTest() {
+public class LajigeneraattoriTest {
+    
+    public LajigeneraattoriTest() {
     }
-
+    
     @BeforeClass
     public static void setUpClass() {
     }
-
+    
     @AfterClass
     public static void tearDownClass() {
     }
-
+    
     @Before
     public void setUp() {
     }
-
+    
     @After
     public void tearDown() {
     }
 
-
-
-    @Test
-    public void nimigeneraattoriGeneroiEnglanninkielisenOrinNimen() {
-        String nimi = Nimigeneraattori.englantilainenOri();
-        assertEquals(nimi.length(), nimi.length() != 0);
-    }
-
-    @Test
-    public void nimigeneraattoriGeneroiEnglanninkielisenTammanNimen() {
-        String nimi = Nimigeneraattori.englantilainenTamma();
-        assertEquals(nimi.length(), nimi.length() != 0);
-    }
-
+    // TODO add test methods here.
+    // The methods must be annotated with annotation @Test. For example:
+    //
+    // @Test
+    // public void hello() {}
 }

@@ -67,7 +67,7 @@ public class Elain {
 
     @Override
     public String toString() {
-        return this.nimi + "\n" + this.laji + "-" + this.skp + ", " + this.vari + " " + this.sakakorkeus + "cm " + "\n" + this.isannimi + " x " + this.emannimi;
+        return this.nimi + this.laji + this.skp + this.vari + this.sakakorkeus + this.isannimi + this.emannimi;
     }
 
 }
