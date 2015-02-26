@@ -33,14 +33,14 @@ public class Elain {
  * @see SukutauluGeneraattori.sovelluslogiikka.Nimigeneraattori#englantilainenNaaras() 
  * @see SukutauluGeneraattori.sovelluslogiikka.Nimigeneraattori#englantilainenUros() 
  * @see SukutauluGeneraattori.sovelluslogiikka.Nimigeneraattori#englantilainenNimi() 
- * @see SukutauluGeneraattori.sovelluslogiikka.VariGeneraattori#valitseVari() 
+ * @see SukutauluGeneraattori.sovelluslogiikka.Varigeneraattori#valitseVari() 
  * @see SukutauluGeneraattori.sovelluslogiikka.Sukupuoligeneraattori#valitseSkp() 
      */
     
     public Elain() {
-        this.laji = Lajigeneraattori.generoiLaji();
         this.sakakorkeus = Sakakorkeusgeneraattori.generoiSakakorkeus(180, 100);
         this.vari = Varigeneraattori.valitseVari();
+        this.laji = Lajigeneraattori.generoiLaji();
         this.skp = Sukupuoligeneraattori.valitseSkp();
         this.nimi = Nimigeneraattori.englantilainenNimi();
         this.isannimi = Nimigeneraattori.englantilainenUros();

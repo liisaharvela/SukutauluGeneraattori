@@ -6,7 +6,7 @@
 package SukutauluGeneraattori.kayttoliittyma;
 
 /**
- *
+ * Luokka sisältää ActionListenerin jonka reagoi eläimen generointinappiin generaattorin käyttöliittymässä
  * @author Liisa
  */
 import SukutauluGeneraattori.sovelluslogiikka.Elain;
@@ -25,6 +25,17 @@ public class Tapahtumakuuntelija implements ActionListener {
     private JTextField isa;
     private JTextField ema;
     private Elain elukka;
+    
+    /**
+     * Konstruktori, joka alustaa Tapahtumankuuntelijan
+     * @param generoi Generointinappi
+     * @param nimi Nimikenttä
+     * @param skp Sukupuolikenttä
+     * @param vari Värikenttä
+     * @param laji Lajikenttä
+     * @param isa Isän tiedot näyttävä kenttä
+     * @param ema Emän tiedot näyttävä kenttä
+     */
 
     public Tapahtumakuuntelija(JButton generoi, JTextField nimi, JTextField skp, JTextField vari, JTextField laji, JTextField isa, JTextField ema) {
         this.generoi = generoi;
@@ -36,6 +47,11 @@ public class Tapahtumakuuntelija implements ActionListener {
         this.ema = ema;
     }
 
+    /**
+     * Tapahtumankuuntelijan toiminnallisuus
+     * @param ae ActionEvent
+     */
+    
     @Override
     public void actionPerformed(ActionEvent ae) {
         if (ae.getSource() == generoi) {
