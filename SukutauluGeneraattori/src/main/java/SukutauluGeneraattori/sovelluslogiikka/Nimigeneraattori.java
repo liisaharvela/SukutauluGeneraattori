@@ -45,7 +45,7 @@ public class Nimigeneraattori {
         String[] names1 = {"George", "Benjamin", "Joseph", "Rostofer", "Joyous", "Happy-Go-Lucky", "Argel", "Animositious", "Anchorage",
             "Basil", "Bandicoot", "Baloo", "Alabaster", "Cornidge", "", "Corifoule", "Didorie", "Danish", "Daniel", "Eustacious", "Eustace", "Euridge"}; // lisää nimiä myöhemmin
         String[] names2 = {"", "Fabulous", "Egregious", "", "Argle", "Bargle", "Argyle", "Callipygian", "Canoodle", "Cantankerous",
-            "Cockalorum", "", "Collop", "", "Codswallop", "Comeuppance", "Crudivore", "Cockamamie", "Fard", "Fartlek", "Fatuous",
+            "Cockalorum", "", "Collop", "", "Codswallop", "Comeuppance", "Crudivore", "Cockamamie", "Fad", "Geneve", "Gene", "Kaleidescope", 
             "Filibuster", ""};
 
         String name1 = names1[(int) (Math.random() * names1.length)];
