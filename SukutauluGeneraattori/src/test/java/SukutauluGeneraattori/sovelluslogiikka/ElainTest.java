@@ -9,6 +9,7 @@ package SukutauluGeneraattori.sovelluslogiikka;
  *
  * @author Liisa
  */
+import sukutaulugeneraattori.sovelluslogiikka.Elain;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;

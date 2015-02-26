@@ -1,6 +1,9 @@
+package sukutaulugeneraattori.kayttoliittyma;
 
-import SukutauluGeneraattori.kayttoliittyma.FantasiaelainGeneraattori;
-import SukutauluGeneraattori.sovelluslogiikka.Elain;
+
+import sukutaulugeneraattori.kayttoliittyma.FantasiaelainGeneraattori;
+import sukutaulugeneraattori.kayttoliittyma.FantasiaelainGeneraattori;
+import sukutaulugeneraattori.sovelluslogiikka.Elain;
 import javax.swing.SwingUtilities;
 
 /*

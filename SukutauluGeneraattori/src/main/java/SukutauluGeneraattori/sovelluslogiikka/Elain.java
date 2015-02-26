@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package SukutauluGeneraattori.sovelluslogiikka;
+package sukutaulugeneraattori.sovelluslogiikka;
 
 /**
  * Luokka kokoaa generaattoreiden tiedot Elain-oliolle, sekä tarjoaa 

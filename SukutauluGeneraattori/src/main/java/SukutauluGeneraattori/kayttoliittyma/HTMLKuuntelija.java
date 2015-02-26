@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package SukutauluGeneraattori.kayttoliittyma;
+package sukutaulugeneraattori.kayttoliittyma;
 
-import SukutauluGeneraattori.sovelluslogiikka.HTMLTulostin;
+import sukutaulugeneraattori.sovelluslogiikka.HTMLTulostin;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;

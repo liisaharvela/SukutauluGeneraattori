@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package SukutauluGeneraattori.kayttoliittyma;
+package sukutaulugeneraattori.kayttoliittyma;
 
 /**
  * Luokka sisältää ActionListenerin jonka reagoi eläimen generointinappiin generaattorin käyttöliittymässä
  * @author Liisa
  */
-import SukutauluGeneraattori.sovelluslogiikka.Elain;
+import sukutaulugeneraattori.sovelluslogiikka.Elain;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
