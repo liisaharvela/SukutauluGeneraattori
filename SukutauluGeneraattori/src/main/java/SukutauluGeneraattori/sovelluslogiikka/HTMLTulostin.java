@@ -6,11 +6,26 @@
 package SukutauluGeneraattori.sovelluslogiikka;
 
 /**
- *
+ * Luokka tulostaa sukutaulu-tablen HTML-koodina randomisti valituilla tiedoilla
  * @author Liisa
  */
 public class HTMLTulostin {
 
+    /**
+     * Metodi hakee eläimelle tiedot luomalla uuden Elain-olion ja kutsumalla sen get-metodeilla 
+     * eläimen tiedot. Se tulostaa sitten taulukun HTML-koodin näillä tiedoilla täytettynä.
+     * 
+     * @see SukutauluGeneraattori.sovelluslogiikka.Elain#forHTML() 
+     * @see SukutauluGeneraattori.sovelluslogiikka.Elain#getIsanNimi()
+     * @see SukutauluGeneraattori.sovelluslogiikka.Elain#getIsanIsanNimi()
+     * @see SukutauluGeneraattori.sovelluslogiikka.Elain#getIsanEmanNimi()
+     * @see SukutauluGeneraattori.sovelluslogiikka.Elain#getEmanNimi()
+     * @see SukutauluGeneraattori.sovelluslogiikka.Elain#getEmanEmanNimi()
+     * @see SukutauluGeneraattori.sovelluslogiikka.Elain#getEmanIsanNimi()
+     * 
+     * @return String tulostettava  Esitäytetty HTML-koodi 
+     */
+    
     public static String HTMLTulostaja() {
 
         Elain elain = new Elain();

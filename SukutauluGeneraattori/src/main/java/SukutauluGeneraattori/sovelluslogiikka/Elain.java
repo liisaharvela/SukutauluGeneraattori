@@ -6,7 +6,9 @@
 package SukutauluGeneraattori.sovelluslogiikka;
 
 /**
- *
+ * Luokka kokoaa generaattoreiden tiedot Elain-oliolle, sekä tarjoaa 
+ * toString ja get-metodeja eri ohjelman toiminnallisuuksille
+
  * @author Liisa
  */
 public class Elain {
@@ -23,10 +25,22 @@ public class Elain {
     private String emanisannimi;
     private String emanemannimi;
 
+    /**
+ * Konstruktori, joka hakee eri luokista generoimalla luodut tiedot Elain-oliolle.
+ * 
+ * @see SukutauluGeneraattori.sovelluslogiikka.Lajigeneraattori#generoiLaji() 
+ * @see SukutauluGeneraattori.sovelluslogiikka.Sakakorkeusgeneraattori#generoiSakakorkeus(int, int) 
+ * @see SukutauluGeneraattori.sovelluslogiikka.Nimigeneraattori#englantilainenNaaras() 
+ * @see SukutauluGeneraattori.sovelluslogiikka.Nimigeneraattori#englantilainenUros() 
+ * @see SukutauluGeneraattori.sovelluslogiikka.Nimigeneraattori#englantilainenNimi() 
+ * @see SukutauluGeneraattori.sovelluslogiikka.VariGeneraattori#valitseVari() 
+ * @see SukutauluGeneraattori.sovelluslogiikka.Sukupuoligeneraattori#valitseSkp() 
+     */
+    
     public Elain() {
         this.laji = Lajigeneraattori.generoiLaji();
         this.sakakorkeus = Sakakorkeusgeneraattori.generoiSakakorkeus(180, 100);
-        this.vari = VariGeneraattori.valitseVari();
+        this.vari = Varigeneraattori.valitseVari();
         this.skp = Sukupuoligeneraattori.valitseSkp();
         this.nimi = Nimigeneraattori.englantilainenNimi();
         this.isannimi = Nimigeneraattori.englantilainenUros();

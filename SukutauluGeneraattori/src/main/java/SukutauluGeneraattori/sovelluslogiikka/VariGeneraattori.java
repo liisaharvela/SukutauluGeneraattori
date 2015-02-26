@@ -5,14 +5,18 @@
  */
 package SukutauluGeneraattori.sovelluslogiikka;
 
-import java.util.Random;
 
 /**
- *
+ * Luokka generoi värin Arraysta
  * @author Liisa
  */
-public class VariGeneraattori {
+public class Varigeneraattori {
 
+    /**
+     * Metodi palauttaa jonkun värin, joka valitaan randomilla Arraysta.
+     * @return vari muodossa String
+     */
+    
     public static String valitseVari() {
         String[] varit = {"violetti", "oranssi", "musta", "valkoinen", "ruskea", "liila", "vaaleanpunainen", "vihreä", "sininen", 
         "pinkki", "punainen", "sateenkaarenkirjava", "kultainen", "hopeinen"};

@@ -5,17 +5,18 @@
  */
 package SukutauluGeneraattori.sovelluslogiikka;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-
 /**
- *
+ * Luokka generoi eläimelle lajin
  * @author Liisa
  */
 public class Lajigeneraattori {
 
 
+    /**
+     * Metodi palauttaa lajin, joka valitaan randomilla Arraysta.
+     * @return laji muodossa String
+     */
+    
     public static String generoiLaji() {
 
         String[] lajit = {"koira", "kissa", "joutsen", "yksisarvinen", "hevonen", "aasi", "kentauri", "lohikäärme", "nauta", 

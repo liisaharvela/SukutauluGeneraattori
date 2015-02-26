@@ -6,11 +6,16 @@
 package SukutauluGeneraattori.sovelluslogiikka;
 
 /**
- *
+ * Luokka generoi sukupuolen Arraysta 
  * @author Liisa
  */
 public class Sukupuoligeneraattori {
 
+    /**
+     * Metodi palauttaa sukupuolen, joka valitaan randomilla Arraysta.
+     * @return sukupuoli muodossa String
+     */
+    
     public static String valitseSkp() {
         String[] sukupuolet = {"naaras", "uros", "naaras", "uros", "naaras", "uros", "naaras", "uros", "naaras", "uros", 
         "naaras", "uros", "naaras", "uros", "naaras", "uros", "naaras", "uros", "naaras", "uros", "naaras", "uros"};
