@@ -12,6 +12,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import static org.junit.matchers.JUnitMatchers.containsString;
+import static org.junit.matchers.JUnitMatchers.either;
 
 /**
  *
@@ -39,11 +40,10 @@ public class HTMLTulostinTest {
     }
 
     @Test
-    public void HTMLGeneraattoriTulostaaLajinOikein() {
-        Elain elainYksi = new Elain();
+    public void HTMLTulostusSisaltaaSyotetynTiedon() {
+        
+        String elukkaYksi = HTMLTulostin.HTMLTulostaja();
 
-        String elukkaYksi = elainYksi.forHTML();
-
-        assertThat(elukkaYksi, containsString(elainYksi.getLaji()));
+        assertThat(elukkaYksi, either(containsString("uros")).or(containsString("naaras")));
     }
 }
