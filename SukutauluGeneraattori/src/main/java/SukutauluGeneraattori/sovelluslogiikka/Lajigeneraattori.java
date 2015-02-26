@@ -21,7 +21,8 @@ public class Lajigeneraattori {
 
         String[] lajit = {"koira", "kissa", "joutsen", "yksisarvinen", "hevonen", "aasi", "kentauri", "lohikäärme", "nauta", 
         "sika", "hanhi", "vuohi", "kani", "gerbiili", "etana", "leijona", "griffoni", "riikinkukko", "leopardi", "kultakala", 
-        "mörkö", "trolli", "susi", "riikinkukko"};
+        "mörkö", "trolli", "susi", "riikinkukko", "delfiini", "mursu", "norsu", "virtahepo", "kirahvi", "kilpikonna", 
+        "hiiri", "pegasos", "muumi", "mörökölli", "karvapallero"};
 
         String laji = lajit[(int) (Math.random() * lajit.length)];
 

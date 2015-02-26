@@ -19,7 +19,10 @@ public class Varigeneraattori {
     
     public static String valitseVari() {
         String[] varit = {"violetti", "oranssi", "musta", "valkoinen", "ruskea", "liila", "vaaleanpunainen", "vihreä", "sininen", 
-        "pinkki", "punainen", "sateenkaarenkirjava", "kultainen", "hopeinen"};
+        "pinkki", "punainen", "sateenkaarenkirjava", "kultainen", "hopeinen", "titaaninvalkoinen", "norsunluu", "laventeli", "harmaa", 
+        "indigo", "syaani", "turkoosi", "akvamariini", "smaragdinvihreä", "ultramariini", "meripihka", "khaki", "beige", "limenvihreä", 
+        "punamulta", "terrakotta", "karmiini", "koralli", "tulenpunainen", "kastanja", "sienna", "seepia", "purppura", "fuksia", 
+        "kirsikanpunainen"};
 
         String vari = varit[(int) (Math.random() * varit.length)];
 
