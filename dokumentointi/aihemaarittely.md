@@ -6,7 +6,12 @@ Toteutan generaattorin, joka generoi mielikuvituseläimen käyttäjälle. Genera
 
 Käyttäjä: Lapsi, ~7-12v (suunniteltu 12v serkulleni)
 
+Tavoitteet:
+- Yksinkertainen käyttöliittymä, jotta lapsenkin on helppo käyttää sitä
+- Monipuolinen laji-, väri-, koko- ja nimivalikoima
+- Helposti luettava tulostusmuoto
+- Tulostettavat tiedot kopioitavissa CTRL+C-toiminnolla suoraan käyttöliittymästä
+
 Toimintoja:
 - Generoi eläin (käyttöliittymän kautta)
 - Tulostin (tulosta eläimen sukutaulu ja tiedot valmiiksi muotoiltuna (X)HTML-kielellä taulukkoon)
-- Tavoitteena yksinkertainen käyttöjärjestelmä, jotta lapsenkin on helppo käyttää sitä
