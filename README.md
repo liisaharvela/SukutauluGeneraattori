@@ -4,4 +4,4 @@ Olen huomannut astetta mielenkiintoisemman ilmiön GitHub vs Netbeansin käytös
 
 Yritän korjata ongelman parhaani mukaan vielä ennen deadlinea, mutta tämä ei ole nyt minusta johtuva ilmiö, ja jos tämä tulee esille koodiani arvostellessa toivoisin, että tämän READMEn selitys otettaisiin huomioon. Kiitos!
 
-27.02.2015 klo 15.19 - Ongelma näyttää korjaantuneen. Testattu välillä oma pöytätietokoneeni - poikaystäväni pöytäkone - oma läppärini, joista pöytäkoneeni on se, millä projekti on alunperin luotu ja millä se on aina toiminut. Varigeneraattori-luokka toimii toivotusti nyt kahdella "ulkopuolisella" koneella. Toivon, että ongelma on tosiaan tällä selvä! Jätän varmuuden vuoksi tämän selityksen vielä tähän varmuuden vuoksi.
+27.02.2015 klo 15.19 - Ongelma näyttää korjaantuneen. Testattu välillä oma pöytätietokoneeni - poikaystäväni pöytäkone - oma läppärini, joista pöytäkoneeni on se, millä projekti on alunperin luotu ja millä se on aina toiminut. Varigeneraattori-luokka toimii toivotusti nyt kahdella "ulkopuolisella" koneella. Toivon, että ongelma on tosiaan tällä selvä! Jätän varmuuden vuoksi tämän selityksen vielä tähän.
