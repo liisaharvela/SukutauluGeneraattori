@@ -39,7 +39,7 @@ public class Elain {
     
     public Elain() {
         this.sakakorkeus = Sakakorkeusgeneraattori.generoiSakakorkeus(180, 100);
-        this.vari = Variggeneraattori.valitseVari();
+        this.vari = Varigeneraattori.valitseVari();
         this.laji = Lajigeneraattori.generoiLaji();
         this.skp = Sukupuoligeneraattori.valitseSkp();
         this.nimi = Nimigeneraattori.englantilainenNimi();
