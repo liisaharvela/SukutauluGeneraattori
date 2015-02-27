@@ -43,7 +43,7 @@ public class HTMLTulostinTest {
     @Test
     public void HTMLTulostusSisaltaaSyotetynTiedon() {
         
-        String elukkaYksi = HTMLTulostin.HTMLTulostaja();
+        String elukkaYksi = HTMLTulostin.htmlTulostaja();
 
         assertThat(elukkaYksi, either(containsString("uros")).or(containsString("naaras")));
     }
