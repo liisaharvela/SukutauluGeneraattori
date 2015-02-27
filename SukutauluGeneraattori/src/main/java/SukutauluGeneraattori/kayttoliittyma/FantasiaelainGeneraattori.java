@@ -45,8 +45,8 @@ public class FantasiaelainGeneraattori implements Runnable {
      * Metodi luo Swing-komponentit sekä asettelee ne järkevästi näkyviin
      * käyttäjän ruudulle.
      *
-     * @see SukutauluGeneraattori.kayttoliittyma.HTMLKuuntelija#HTMLKuuntelija(javax.swing.JButton, javax.swing.JTextField) 
-     * @see SukutauluGeneraattori.kayttoliittyma.Tapahtumakuuntelija#Tapahtumakuuntelija(javax.swing.JButton, javax.swing.JTextField, javax.swing.JTextField, javax.swing.JTextField, javax.swing.JTextField, javax.swing.JTextField, javax.swing.JTextField) 
+     * @see sukutaulugeneraattori.kayttoliittyma.HTMLKuuntelija#HTMLKuuntelija(javax.swing.JButton, javax.swing.JTextField) 
+     * @see sukutaulugeneraattori.kayttoliittyma.Tapahtumakuuntelija#Tapahtumakuuntelija(javax.swing.JButton, javax.swing.JTextField, javax.swing.JTextField, javax.swing.JTextField, javax.swing.JTextField, javax.swing.JTextField, javax.swing.JTextField) 
      * @param container Swing-komponenttien Container
      */
     private void luoKomponentit(Container container) {

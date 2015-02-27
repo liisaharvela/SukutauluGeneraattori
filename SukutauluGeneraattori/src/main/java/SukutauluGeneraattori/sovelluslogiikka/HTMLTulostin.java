@@ -15,13 +15,13 @@ public class HTMLTulostin {
      * Metodi hakee eläimelle tiedot luomalla uuden Elain-olion ja kutsumalla sen get-metodeilla 
      * eläimen tiedot. Se tulostaa sitten taulukun HTML-koodin näillä tiedoilla täytettynä.
      * 
-     * @see SukutauluGeneraattori.sovelluslogiikka.Elain#forHTML() 
-     * @see SukutauluGeneraattori.sovelluslogiikka.Elain#getIsanNimi()
-     * @see SukutauluGeneraattori.sovelluslogiikka.Elain#getIsanIsanNimi()
-     * @see SukutauluGeneraattori.sovelluslogiikka.Elain#getIsanEmanNimi()
-     * @see SukutauluGeneraattori.sovelluslogiikka.Elain#getEmanNimi()
-     * @see SukutauluGeneraattori.sovelluslogiikka.Elain#getEmanEmanNimi()
-     * @see SukutauluGeneraattori.sovelluslogiikka.Elain#getEmanIsanNimi()
+     * @see sukutaulugeneraattori.sovelluslogiikka.Elain#forHTML() 
+     * @see sukutaulugeneraattori.sovelluslogiikka.Elain#getIsanNimi()
+     * @see sukutaulugeneraattori.sovelluslogiikka.Elain#getIsanIsanNimi()
+     * @see sukutaulugeneraattori.sovelluslogiikka.Elain#getIsanEmanNimi()
+     * @see sukutaulugeneraattori.sovelluslogiikka.Elain#getEmanNimi()
+     * @see sukutaulugeneraattori.sovelluslogiikka.Elain#getEmanEmanNimi()
+     * @see sukutaulugeneraattori.sovelluslogiikka.Elain#getEmanIsanNimi()
      * 
      * @return String tulostettava  Esitäytetty HTML-koodi 
      */

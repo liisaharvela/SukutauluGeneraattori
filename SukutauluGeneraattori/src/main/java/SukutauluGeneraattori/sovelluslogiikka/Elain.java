@@ -30,20 +30,20 @@ public class Elain {
      * Elain-oliolle.
      *
      * @see
-     * SukutauluGeneraattori.sovelluslogiikka.Lajigeneraattori#generoiLaji()
+     * sukutaulugeneraattori.sovelluslogiikka.Lajigeneraattori#generoiLaji()
      * @see
-     * SukutauluGeneraattori.sovelluslogiikka.Sakakorkeusgeneraattori#generoiSakakorkeus(int,
+     * sukutaulugeneraattori.sovelluslogiikka.Sakakorkeusgeneraattori#generoiSakakorkeus(int,
      * int)
      * @see
-     * SukutauluGeneraattori.sovelluslogiikka.Nimigeneraattori#englantilainenNaaras()
+     * sukutaulugeneraattori.sovelluslogiikka.Nimigeneraattori#englantilainenNaaras()
      * @see
-     * SukutauluGeneraattori.sovelluslogiikka.Nimigeneraattori#englantilainenUros()
+     * sukutaulugeneraattori.sovelluslogiikka.Nimigeneraattori#englantilainenUros()
      * @see
-     * SukutauluGeneraattori.sovelluslogiikka.Nimigeneraattori#englantilainenNimi()
+     * sukutaulugeneraattori.sovelluslogiikka.Nimigeneraattori#englantilainenNimi()
      * @see
-     * SukutauluGeneraattori.sovelluslogiikka.Varigeneraattori#valitseVari()
+     * sukutaulugeneraattori.sovelluslogiikka.Varigeneraattori#valitseVari()
      * @see
-     * SukutauluGeneraattori.sovelluslogiikka.Sukupuoligeneraattori#valitseSkp()
+     * sukutaulugeneraattori.sovelluslogiikka.Sukupuoligeneraattori#valitseSkp()
      */
     public Elain() {
         this.sakakorkeus = Sakakorkeusgeneraattori.generoiSakakorkeus(180, 100);
