@@ -1,1 +1,5 @@
 # SukutauluGeneraattori
+
+Olen huomannut astetta mielenkiintoisemman ilmiön GitHub vs Netbeansin käytössä. GitHub näemmä kohtelee suuria ja pieniä alkukirjaimia samana, mutta Netbeans ei. Toisinsanoen, luokka Varigeneraattori.java oli ensin nimetty VariGeneraattori.javaksi, ja refraktoroin sen omalla koneellani jotta keskimmäinen G ei olisi enää isolla. Nyt kuitenkin ladatessani tiedostot GitHubiin, GitHub tunnistaa kyllä että Varigeneraattorin nimi on muuttunut luokassa sisällä, mutta ei muuta itse luokan nimeä. Näinollen, kun repo ladataan toiselle koneelle, saattaa Varigeneraattori-luokka olla hajalla. Refraktoroimalla luokan nimelle VariGeneraattori koko koodin pitäisi alkaa toimimaan myös muilla koneilla.
+
+Yritän korjata ongelman parhaani mukaan vielä ennen deadlinea, mutta tämä ei ole nyt minusta johtuva ilmiö, ja jos tämä tulee esille koodiani arvostellessa toivoisin, että tämän READMEn selitys otettaisiin huomioon. Kiitos!
