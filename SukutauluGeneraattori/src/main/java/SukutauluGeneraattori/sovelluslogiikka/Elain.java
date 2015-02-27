@@ -6,9 +6,9 @@
 package sukutaulugeneraattori.sovelluslogiikka;
 
 /**
- * Luokka kokoaa generaattoreiden tiedot Elain-oliolle, sekä tarjoaa 
- * toString ja get-metodeja eri ohjelman toiminnallisuuksille
-
+ * Luokka kokoaa generaattoreiden tiedot Elain-oliolle, sekä tarjoaa toString ja
+ * get-metodeja eri ohjelman toiminnallisuuksille
+ *
  * @author Liisa
  */
 public class Elain {
@@ -26,17 +26,25 @@ public class Elain {
     private String emanemannimi;
 
     /**
- * Konstruktori, joka hakee eri luokista generoimalla luodut tiedot Elain-oliolle.
- * 
- * @see SukutauluGeneraattori.sovelluslogiikka.Lajigeneraattori#generoiLaji() 
- * @see SukutauluGeneraattori.sovelluslogiikka.Sakakorkeusgeneraattori#generoiSakakorkeus(int, int) 
- * @see SukutauluGeneraattori.sovelluslogiikka.Nimigeneraattori#englantilainenNaaras() 
- * @see SukutauluGeneraattori.sovelluslogiikka.Nimigeneraattori#englantilainenUros() 
- * @see SukutauluGeneraattori.sovelluslogiikka.Nimigeneraattori#englantilainenNimi() 
- * @see SukutauluGeneraattori.sovelluslogiikka.Varigeneraattori#valitseVari() 
- * @see SukutauluGeneraattori.sovelluslogiikka.Sukupuoligeneraattori#valitseSkp() 
+     * Konstruktori, joka hakee eri luokista generoimalla luodut tiedot
+     * Elain-oliolle.
+     *
+     * @see
+     * SukutauluGeneraattori.sovelluslogiikka.Lajigeneraattori#generoiLaji()
+     * @see
+     * SukutauluGeneraattori.sovelluslogiikka.Sakakorkeusgeneraattori#generoiSakakorkeus(int,
+     * int)
+     * @see
+     * SukutauluGeneraattori.sovelluslogiikka.Nimigeneraattori#englantilainenNaaras()
+     * @see
+     * SukutauluGeneraattori.sovelluslogiikka.Nimigeneraattori#englantilainenUros()
+     * @see
+     * SukutauluGeneraattori.sovelluslogiikka.Nimigeneraattori#englantilainenNimi()
+     * @see
+     * SukutauluGeneraattori.sovelluslogiikka.Varigeneraattori#valitseVari()
+     * @see
+     * SukutauluGeneraattori.sovelluslogiikka.Sukupuoligeneraattori#valitseSkp()
      */
-    
     public Elain() {
         this.sakakorkeus = Sakakorkeusgeneraattori.generoiSakakorkeus(180, 100);
         this.vari = Varigeneraattori.valitseVari();
@@ -90,7 +98,7 @@ public class Elain {
     public String getEmanIsanNimi() {
         return this.emanisannimi;
     }
-    
+
     public String getEmanEmanNimi() {
         return this.emanemannimi;
     }
@@ -102,11 +110,11 @@ public class Elain {
     public String getEma() {
         return this.emannimi + " " + "(" + this.emanisannimi + " x " + this.emanemannimi + ")";
     }
-    
+
     public String forHTML() {
         return this.nimi + "<br />" + this.laji + "-" + this.skp + ", " + this.vari + " " + this.sakakorkeus + "cm";
     }
-    
+
     @Override
     public String toString() {
         return this.nimi + this.laji + this.skp + this.vari + this.sakakorkeus + this.isannimi + this.emannimi;

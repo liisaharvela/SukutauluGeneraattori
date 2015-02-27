@@ -7,27 +7,26 @@ package sukutaulugeneraattori.sovelluslogiikka;
 
 /**
  * Luokka generoi eläimelle lajin
+ *
  * @author Liisa
  */
 public class Lajigeneraattori {
 
-
     /**
      * Metodi palauttaa lajin, joka valitaan randomilla Arraysta.
+     *
      * @return laji muodossa String
      */
-    
     public static String generoiLaji() {
 
-        String[] lajit = {"koira", "kissa", "joutsen", "yksisarvinen", "hevonen", "aasi", "kentauri", "lohikäärme", "nauta", 
-        "sika", "hanhi", "vuohi", "kani", "gerbiili", "etana", "leijona", "griffoni", "riikinkukko", "leopardi", "kultakala", 
-        "mörkö", "trolli", "susi", "riikinkukko", "delfiini", "mursu", "norsu", "virtahepo", "kirahvi", "kilpikonna", 
-        "hiiri", "pegasos", "muumi", "mörökölli", "karvapallero"};
+        String[] lajit = {"koira", "kissa", "joutsen", "yksisarvinen", "hevonen", "aasi", "kentauri", "lohikäärme", "nauta",
+            "sika", "hanhi", "vuohi", "kani", "gerbiili", "etana", "leijona", "griffoni", "riikinkukko", "leopardi", "kultakala",
+            "mörkö", "trolli", "susi", "riikinkukko", "delfiini", "mursu", "norsu", "virtahepo", "kirahvi", "kilpikonna",
+            "hiiri", "pegasos", "muumi", "mörökölli", "karvapallero"};
 
         String laji = lajit[(int) (Math.random() * lajit.length)];
 
         return laji;
     }
-
 
 }

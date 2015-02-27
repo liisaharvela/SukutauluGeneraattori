@@ -26,7 +26,7 @@ public class HTMLTulostin {
      * @return String tulostettava  Esitäytetty HTML-koodi 
      */
     
-    public static String HTMLTulostaja() {
+    public static String htmlTulostaja() {
 
         Elain elain = new Elain();
         

@@ -40,7 +40,7 @@ public class HTMLKuuntelija implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent ae) {
         if (ae.getSource() == generoiKoodi) {
-            String tulostaKoodi = HTMLTulostin.HTMLTulostaja();
+            String tulostaKoodi = HTMLTulostin.htmlTulostaja();
             koodiKentta.setText(tulostaKoodi);
         }
 

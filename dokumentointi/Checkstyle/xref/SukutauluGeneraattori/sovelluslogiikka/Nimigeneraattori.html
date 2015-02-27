@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en_US" lang="en_US">
+<head><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Nimigeneraattori xref</title>
+<link type="text/css" rel="stylesheet" href="../../stylesheet.css" />
+</head>
+<body>
+<div id="overview"><a href="../../../apidocs/sukutaulugeneraattori/sovelluslogiikka/Nimigeneraattori.html">View Javadoc</a></div><pre>
+<a class="jxr_linenumber" name="L1" href="#L1">1</a>   <em class="jxr_comment">/*</em>
+<a class="jxr_linenumber" name="L2" href="#L2">2</a>   <em class="jxr_comment"> * To change this license header, choose License Headers in Project Properties.</em>
+<a class="jxr_linenumber" name="L3" href="#L3">3</a>   <em class="jxr_comment"> * To change this template file, choose Tools | Templates</em>
+<a class="jxr_linenumber" name="L4" href="#L4">4</a>   <em class="jxr_comment"> * and open the template in the editor.</em>
+<a class="jxr_linenumber" name="L5" href="#L5">5</a>   <em class="jxr_comment"> */</em>
+<a class="jxr_linenumber" name="L6" href="#L6">6</a>   <strong class="jxr_keyword">package</strong> sukutaulugeneraattori.sovelluslogiikka;
+<a class="jxr_linenumber" name="L7" href="#L7">7</a>   
+<a class="jxr_linenumber" name="L8" href="#L8">8</a>   <em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L9" href="#L9">9</a>   <em class="jxr_javadoccomment"> * Luokka generoi Arraysta nimiä sukupuolen tai sukupuolineutraaliuden mukaan</em>
+<a class="jxr_linenumber" name="L10" href="#L10">10</a>  <em class="jxr_javadoccomment"> *</em>
+<a class="jxr_linenumber" name="L11" href="#L11">11</a>  <em class="jxr_javadoccomment"> * @author Liisa</em>
+<a class="jxr_linenumber" name="L12" href="#L12">12</a>  <em class="jxr_javadoccomment"> */</em>
+<a class="jxr_linenumber" name="L13" href="#L13">13</a>  <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> <a href="../../sukutaulugeneraattori/sovelluslogiikka/Nimigeneraattori.html">Nimigeneraattori</a> {
+<a class="jxr_linenumber" name="L14" href="#L14">14</a>  
+<a class="jxr_linenumber" name="L15" href="#L15">15</a>      <em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L16" href="#L16">16</a>  <em class="jxr_javadoccomment">     * Metodi generoi kolmesta eri Arraysta randomilla yhden nimen, ja palauttaa</em>
+<a class="jxr_linenumber" name="L17" href="#L17">17</a>  <em class="jxr_javadoccomment">     * ne yhdistettynä Stringinä</em>
+<a class="jxr_linenumber" name="L18" href="#L18">18</a>  <em class="jxr_javadoccomment">     *</em>
+<a class="jxr_linenumber" name="L19" href="#L19">19</a>  <em class="jxr_javadoccomment">     * @return nimi muodossa String</em>
+<a class="jxr_linenumber" name="L20" href="#L20">20</a>  <em class="jxr_javadoccomment">     */</em>
+<a class="jxr_linenumber" name="L21" href="#L21">21</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> String englantilainenNimi() {
+<a class="jxr_linenumber" name="L22" href="#L22">22</a>          String[] names1 = {<span class="jxr_string">"Kairan"</span>, <span class="jxr_string">"Sam"</span>, <span class="jxr_string">"Sareli"</span>, <span class="jxr_string">"Soir"</span>, <span class="jxr_string">"Noire"</span>, <span class="jxr_string">"Freppe"</span>, <span class="jxr_string">"Argentum"</span>, <span class="jxr_string">"Rastafa"</span>, <span class="jxr_string">"Renoir"</span>, <span class="jxr_string">"Renate"</span>,
+<a class="jxr_linenumber" name="L23" href="#L23">23</a>              <span class="jxr_string">"Riesling"</span>, <span class="jxr_string">"Korelie"</span>, <span class="jxr_string">"Kampuro"</span>, <span class="jxr_string">"Kampadie"</span>, <span class="jxr_string">"Avengel"</span>, <span class="jxr_string">"Avanchensel"</span>, <span class="jxr_string">"Avalanche"</span>, <span class="jxr_string">"Maelstrom"</span>, <span class="jxr_string">"Rain"</span>, <span class="jxr_string">"Gust"</span>,
+<a class="jxr_linenumber" name="L24" href="#L24">24</a>              <span class="jxr_string">"Volcans"</span>, <span class="jxr_string">"Voracious"</span>, <span class="jxr_string">"Vindaloo"</span>, <span class="jxr_string">"Rampager"</span>, <span class="jxr_string">"Roar"</span>, <span class="jxr_string">"Cirion"</span>, <span class="jxr_string">"Cirel"</span>, <span class="jxr_string">"Gold"</span>, <span class="jxr_string">"Turquoise"</span>, <span class="jxr_string">"Ambroise"</span>,
+<a class="jxr_linenumber" name="L25" href="#L25">25</a>              <span class="jxr_string">"Philistine"</span>, <span class="jxr_string">"Femoral"</span>, <span class="jxr_string">"Celestine"</span>, <span class="jxr_string">"January"</span>, <span class="jxr_string">"Mint"</span>, <span class="jxr_string">"Pepper"</span>, <span class="jxr_string">"Salt"</span>, <span class="jxr_string">"Cairo"</span>, <span class="jxr_string">"Tangiers"</span>, <span class="jxr_string">"Olden"</span>, <span class="jxr_string">"Silver"</span>};
+<a class="jxr_linenumber" name="L26" href="#L26">26</a>          String[] names2 = {<span class="jxr_string">""</span>, <span class="jxr_string">" "</span>};
+<a class="jxr_linenumber" name="L27" href="#L27">27</a>          String[] names3 = {<span class="jxr_string">""</span>, <span class="jxr_string">"Bungalow"</span>, <span class="jxr_string">""</span>, <span class="jxr_string">"Jones"</span>, <span class="jxr_string">"Jewel"</span>, <span class="jxr_string">""</span>, <span class="jxr_string">"Silmaril"</span>, <span class="jxr_string">"Centurion"</span>, <span class="jxr_string">""</span>, <span class="jxr_string">"Celestial"</span>, <span class="jxr_string">"Thaumanova"</span>, <span class="jxr_string">"Thaum"</span>,
+<a class="jxr_linenumber" name="L28" href="#L28">28</a>              <span class="jxr_string">"Uderfrykte"</span>, <span class="jxr_string">""</span>, <span class="jxr_string">"Effelant"</span>, <span class="jxr_string">"Effervescent"</span>, <span class="jxr_string">""</span>, <span class="jxr_string">"Crystalline"</span>, <span class="jxr_string">""</span>, <span class="jxr_string">"Faceted"</span>, <span class="jxr_string">"Facetious"</span>, <span class="jxr_string">"Fascimile"</span>, <span class="jxr_string">"Fenrir"</span>, <span class="jxr_string">"Fael"</span>, <span class="jxr_string">"Noelle"</span>,
+<a class="jxr_linenumber" name="L29" href="#L29">29</a>              <span class="jxr_string">"Hoonding"</span>, <span class="jxr_string">""</span>, <span class="jxr_string">"Hircine"</span>, <span class="jxr_string">""</span>, <span class="jxr_string">"Sanguine"</span>, <span class="jxr_string">"Azura"</span>, <span class="jxr_string">"Daedra"</span>, <span class="jxr_string">""</span>, <span class="jxr_string">"Fyr"</span>, <span class="jxr_string">"Kaftanet"</span>, <span class="jxr_string">"Kanet"</span>, <span class="jxr_string">"Khajiit"</span>, <span class="jxr_string">"Peryite"</span>, <span class="jxr_string">"Sheogorath"</span>,
+<a class="jxr_linenumber" name="L30" href="#L30">30</a>              <span class="jxr_string">"Rambuction"</span>, <span class="jxr_string">"Arterion"</span>};
+<a class="jxr_linenumber" name="L31" href="#L31">31</a>  
+<a class="jxr_linenumber" name="L32" href="#L32">32</a>          String name1 = names1[(<strong class="jxr_keyword">int</strong>) (Math.random() * names1.length)];
+<a class="jxr_linenumber" name="L33" href="#L33">33</a>          String name2 = names2[(<strong class="jxr_keyword">int</strong>) (Math.random() * names2.length)];
+<a class="jxr_linenumber" name="L34" href="#L34">34</a>          String name3 = names3[(<strong class="jxr_keyword">int</strong>) (Math.random() * names3.length)];
+<a class="jxr_linenumber" name="L35" href="#L35">35</a>  
+<a class="jxr_linenumber" name="L36" href="#L36">36</a>          <strong class="jxr_keyword">return</strong> name1 + <span class="jxr_string">" "</span> + name2 + <span class="jxr_string">" "</span> + name3;
+<a class="jxr_linenumber" name="L37" href="#L37">37</a>      }
+<a class="jxr_linenumber" name="L38" href="#L38">38</a>  
+<a class="jxr_linenumber" name="L39" href="#L39">39</a>      <em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L40" href="#L40">40</a>  <em class="jxr_javadoccomment">     * Metodi generoi kolmesta eri Arraysta randomilla yhden nimen, ja palauttaa</em>
+<a class="jxr_linenumber" name="L41" href="#L41">41</a>  <em class="jxr_javadoccomment">     * ne yhdistettynä Stringinä</em>
+<a class="jxr_linenumber" name="L42" href="#L42">42</a>  <em class="jxr_javadoccomment">     *</em>
+<a class="jxr_linenumber" name="L43" href="#L43">43</a>  <em class="jxr_javadoccomment">     * @return String nimi</em>
+<a class="jxr_linenumber" name="L44" href="#L44">44</a>  <em class="jxr_javadoccomment">     */</em>
+<a class="jxr_linenumber" name="L45" href="#L45">45</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> String englantilainenUros() {
+<a class="jxr_linenumber" name="L46" href="#L46">46</a>          String[] names1 = {<span class="jxr_string">"George"</span>, <span class="jxr_string">"Benjamin"</span>, <span class="jxr_string">"Joseph"</span>, <span class="jxr_string">"Rostofer"</span>, <span class="jxr_string">"Joyous"</span>, <span class="jxr_string">"Happy-Go-Lucky"</span>, <span class="jxr_string">"Argel"</span>, <span class="jxr_string">"Animositious"</span>, <span class="jxr_string">"Anchorage"</span>,
+<a class="jxr_linenumber" name="L47" href="#L47">47</a>              <span class="jxr_string">"Basil"</span>, <span class="jxr_string">"Bandicoot"</span>, <span class="jxr_string">"Baloo"</span>, <span class="jxr_string">"Alabaster"</span>, <span class="jxr_string">"Cornidge"</span>, <span class="jxr_string">""</span>, <span class="jxr_string">"Corifoule"</span>, <span class="jxr_string">"Didorie"</span>, <span class="jxr_string">"Danish"</span>, <span class="jxr_string">"Daniel"</span>, <span class="jxr_string">"Eustacious"</span>, <span class="jxr_string">"Eustace"</span>, <span class="jxr_string">"Euridge"</span>}; <em class="jxr_comment">// lisää nimiä myöhemmin</em>
+<a class="jxr_linenumber" name="L48" href="#L48">48</a>          String[] names2 = {<span class="jxr_string">""</span>, <span class="jxr_string">"Fabulous"</span>, <span class="jxr_string">"Egregious"</span>, <span class="jxr_string">""</span>, <span class="jxr_string">"Argle"</span>, <span class="jxr_string">"Bargle"</span>, <span class="jxr_string">"Argyle"</span>, <span class="jxr_string">"Callipygian"</span>, <span class="jxr_string">"Canoodle"</span>, <span class="jxr_string">"Cantankerous"</span>,
+<a class="jxr_linenumber" name="L49" href="#L49">49</a>              <span class="jxr_string">"Cockalorum"</span>, <span class="jxr_string">""</span>, <span class="jxr_string">"Collop"</span>, <span class="jxr_string">""</span>, <span class="jxr_string">"Codswallop"</span>, <span class="jxr_string">"Comeuppance"</span>, <span class="jxr_string">"Crudivore"</span>, <span class="jxr_string">"Cockamamie"</span>, <span class="jxr_string">"Fad"</span>, <span class="jxr_string">"Geneve"</span>, <span class="jxr_string">"Gene"</span>, <span class="jxr_string">"Kaleidescope"</span>,
+<a class="jxr_linenumber" name="L50" href="#L50">50</a>              <span class="jxr_string">"Filibuster"</span>, <span class="jxr_string">""</span>};
+<a class="jxr_linenumber" name="L51" href="#L51">51</a>  
+<a class="jxr_linenumber" name="L52" href="#L52">52</a>          String name1 = names1[(<strong class="jxr_keyword">int</strong>) (Math.random() * names1.length)];
+<a class="jxr_linenumber" name="L53" href="#L53">53</a>          String name2 = names2[(<strong class="jxr_keyword">int</strong>) (Math.random() * names2.length)];
+<a class="jxr_linenumber" name="L54" href="#L54">54</a>  
+<a class="jxr_linenumber" name="L55" href="#L55">55</a>          <strong class="jxr_keyword">return</strong> name1 + <span class="jxr_string">" "</span> + name2;
+<a class="jxr_linenumber" name="L56" href="#L56">56</a>      }
+<a class="jxr_linenumber" name="L57" href="#L57">57</a>  
+<a class="jxr_linenumber" name="L58" href="#L58">58</a>      <em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L59" href="#L59">59</a>  <em class="jxr_javadoccomment">     * Metodi generoi kolmesta eri Arraysta randomilla yhden nimen, ja palauttaa</em>
+<a class="jxr_linenumber" name="L60" href="#L60">60</a>  <em class="jxr_javadoccomment">     * ne yhdistettynä Stringinä</em>
+<a class="jxr_linenumber" name="L61" href="#L61">61</a>  <em class="jxr_javadoccomment">     *</em>
+<a class="jxr_linenumber" name="L62" href="#L62">62</a>  <em class="jxr_javadoccomment">     * @return String nimi</em>
+<a class="jxr_linenumber" name="L63" href="#L63">63</a>  <em class="jxr_javadoccomment">     */</em>
+<a class="jxr_linenumber" name="L64" href="#L64">64</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> String englantilainenNaaras() {
+<a class="jxr_linenumber" name="L65" href="#L65">65</a>          String[] names1 = {<span class="jxr_string">"Jemima"</span>, <span class="jxr_string">"Elizabeth"</span>, <span class="jxr_string">"Beatrice"</span>, <span class="jxr_string">"Candice"</span>, <span class="jxr_string">"Cadavarelle"</span>, <span class="jxr_string">"Cornish"</span>, <span class="jxr_string">"Calliope"</span>, <span class="jxr_string">"Amelle"</span>,
+<a class="jxr_linenumber" name="L66" href="#L66">66</a>              <span class="jxr_string">"Trezebelina"</span>, <span class="jxr_string">"Thumbelina"</span>, <span class="jxr_string">"June"</span>, <span class="jxr_string">"Elephantine"</span>, <span class="jxr_string">"Sugary"</span>, <span class="jxr_string">"Welsh"</span>, <span class="jxr_string">"Pink"</span>, <span class="jxr_string">"Golden"</span>, <span class="jxr_string">"Chantelle"</span>, <span class="jxr_string">"Alayne"</span>, <span class="jxr_string">"Maurina"</span>,
+<a class="jxr_linenumber" name="L67" href="#L67">67</a>              <span class="jxr_string">"Harvelle"</span>, <span class="jxr_string">"Jerusalem"</span>, <span class="jxr_string">"Israel"</span>, <span class="jxr_string">"Manticora"</span>, <span class="jxr_string">"Merengue"</span>}; <em class="jxr_comment">// lisää nimiä myöhemmin</em>
+<a class="jxr_linenumber" name="L68" href="#L68">68</a>          String[] names2 = {<span class="jxr_string">""</span>, <span class="jxr_string">"Hugger"</span>, <span class="jxr_string">""</span>, <span class="jxr_string">""</span>, <span class="jxr_string">""</span>, <span class="jxr_string">""</span>, <span class="jxr_string">""</span>, <span class="jxr_string">""</span>, <span class="jxr_string">"Lover"</span>, <span class="jxr_string">"January"</span>, <span class="jxr_string">"Mint"</span>, <span class="jxr_string">"Rog"</span>, <span class="jxr_string">"Jocelyn"</span>, <span class="jxr_string">"Grace"</span>,
+<a class="jxr_linenumber" name="L69" href="#L69">69</a>              <span class="jxr_string">"Amber"</span>, <span class="jxr_string">"Althena"</span>, <span class="jxr_string">"Althea"</span>, <span class="jxr_string">"Emerie"</span>, <span class="jxr_string">"Emanuelle"</span>, <span class="jxr_string">"Angelie"</span>, <span class="jxr_string">"Angelique"</span>, <span class="jxr_string">"Angel"</span>, <span class="jxr_string">"Celestina"</span>, <span class="jxr_string">"Ferdina"</span>,
+<a class="jxr_linenumber" name="L70" href="#L70">70</a>              <span class="jxr_string">"Flourescent"</span>, <span class="jxr_string">"Feathers"</span>, <span class="jxr_string">"Wings"</span>, <span class="jxr_string">"Flowers"</span>, <span class="jxr_string">"Meadow"</span>, <span class="jxr_string">"Stone"</span>, <span class="jxr_string">"Tango"</span>, <span class="jxr_string">"Hota"</span>};
+<a class="jxr_linenumber" name="L71" href="#L71">71</a>  
+<a class="jxr_linenumber" name="L72" href="#L72">72</a>          String name1 = names1[(<strong class="jxr_keyword">int</strong>) (Math.random() * names1.length)];
+<a class="jxr_linenumber" name="L73" href="#L73">73</a>          String name2 = names2[(<strong class="jxr_keyword">int</strong>) (Math.random() * names2.length)];
+<a class="jxr_linenumber" name="L74" href="#L74">74</a>  
+<a class="jxr_linenumber" name="L75" href="#L75">75</a>          <strong class="jxr_keyword">return</strong> name1 + <span class="jxr_string">" "</span> + name2;
+<a class="jxr_linenumber" name="L76" href="#L76">76</a>      }
+<a class="jxr_linenumber" name="L77" href="#L77">77</a>  
+<a class="jxr_linenumber" name="L78" href="#L78">78</a>  }
+</pre>
+<hr/>
+<div id="footer">Copyright &#169; 2015. All rights reserved.</div>
+</body>
+</html>
