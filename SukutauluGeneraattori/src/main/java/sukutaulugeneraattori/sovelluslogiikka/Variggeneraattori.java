@@ -10,7 +10,7 @@ package sukutaulugeneraattori.sovelluslogiikka;
  * Luokka generoi värin Arraysta
  * @author Liisa
  */
-public class Varigeneraattori {
+public class Variggeneraattori {
 
     /**
      * Metodi palauttaa jonkun värin, joka valitaan randomilla Arraysta.
