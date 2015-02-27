@@ -23,3 +23,5 @@ TUNTIKIRJANPITO
 25.02.2015: 6h. Ei ollutkaan koodaus vielä tältä päivältä siinä. Testien tekemistä ja pähkäilemistä. RNG-perusteista systeemiä on todella vaikea testata. Serkun kanssa soittelun jälkeen valaistuneena lisäominaisuuden lisääminen, eli HTML-koodigeneraattorin.
 
 26.02.2015: 5h. Javadocin valmisteleminen, pitin kanssa tappelua (taas, miten se tuntuu aina hajoavan vaikka mitenkään en siihen koske???), dokumentaation kirjoittelua sekä päivittelyä.
+
+27.02.2015: 3h. Loppuvalmistelut. Wahei! Meinasi koko paketti hajota käsiin kun jouduin tappelemaan Checkstylen kanssa, mutta taisin saada kaikki ongelmat ratkottua. Eiköhän se ollut nyt siinä.
