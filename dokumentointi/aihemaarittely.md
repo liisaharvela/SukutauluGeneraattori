@@ -15,3 +15,8 @@ Tavoitteet:
 Toimintoja:
 - Generoi eläin (käyttöliittymän kautta)
 - Tulostin (tulosta eläimen sukutaulu ja tiedot valmiiksi muotoiltuna (X)HTML-kielellä taulukkoon)
+
+Mahdolliset tulevat laajennukset:
+- Graafisen käyttöliittymän "lapsiystävällisyys", värejä ja kuvia
+- Nimilistojen monipuolistaminen
+- Lajilistan monipuolistaminen
